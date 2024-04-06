@@ -41,7 +41,7 @@
                     "type": "STR",
                     "positional": true,
                     "required": true
-                }
+                },
                 "timeout_value": {
                     "name": "Wall time (seconds):",
                     "type": "STR",

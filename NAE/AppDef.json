@@ -42,6 +42,13 @@
                     "positional": true,
                     "required": true
                 }
+                "timeout_value": {
+                    "name": "Wall time (seconds):",
+                    "type": "STR",
+                    "value": "60",
+                    "required": true,
+                    "positional": true
+                }
             }
         },
         "Server": {
@@ -52,10 +59,8 @@
             "parameters": {
                 "timeout_value": {
                     "name": "Wall time (seconds):",
-                    "type": "INT",
-                    "value": "180",
-                    "min": "60",
-                    "max": "36000",
+                    "type": "STR",
+                    "value": "120",
                     "required": true,
                     "positional": true
                 }
@@ -71,15 +76,13 @@
                     "name": "Command",
                     "description": "Command to run",
                     "type": "STR",
-                    "required": true,
+                    "required": false,
                     "positional": true
                 },
                 "timeout_value": {
                     "name": "Wall time (seconds):",
-                    "type": "INT",
-                    "value": 180,
-                    "min": 60,
-                    "max": 36000,
+                    "type": "STR",
+                    "value": "180",
                     "required": true,
                     "positional": true
                 }

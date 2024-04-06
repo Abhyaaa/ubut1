@@ -76,7 +76,7 @@
                     "name": "Command",
                     "description": "Command to run",
                     "type": "STR",
-                    "required": false,
+                    "required": true,
                     "positional": true
                 },
                 "timeout_value": {

@@ -49,7 +49,17 @@
             "interactive": true,
             "name": "Server",
             "description": "Launch a session with all boot services, including SSH (if installed).  Connection address and credentials will appear in your web browser once available.",
-            "parameters": {}
+            "parameters": {
+                "timeout_value": {
+                    "name": "Wall time (seconds):",
+                    "type": "INT",
+                    "value": "180",
+                    "min": "60",
+                    "max": "36000",
+                    "required": true,
+                    "positional": true
+                }
+            }
         },
         "GUI": {
             "path": "/usr/local/bin/nimbix_desktop",
@@ -61,8 +71,17 @@
                     "name": "Command",
                     "description": "Command to run",
                     "type": "STR",
-                    "positional": true,
-                    "required": true
+                    "required": true,
+                    "positional": true
+                },
+                "timeout_value": {
+                    "name": "Wall time (seconds):",
+                    "type": "INT",
+                    "value": 180,
+                    "min": 60,
+                    "max": 36000,
+                    "required": true,
+                    "positional": true
                 }
             }
         }
